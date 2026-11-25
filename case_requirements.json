@@ -1,0 +1,33 @@
+{
+  "calculator": {
+    "source": "sample_code/calculator.py",
+    "tests": "tests/test_calculator.py",
+    "rules": [
+      "add, subtract, and multiply return the normal mathematical result.",
+      "divide returns the mathematical quotient, including fractional results.",
+      "divide(7, 2) must return 3.5; divide(8, 2) must return 4.",
+      "Division by zero raises CalculationError.",
+      "An invalid operation must not prevent the next valid operation from working."
+    ]
+  },
+  "average": {
+    "source": "sample_code/average.py",
+    "tests": "tests/test_average.py",
+    "rules": [
+      "Input is a list of ordinary finite numbers.",
+      "Return the arithmetic mean for a nonempty list.",
+      "For [2, 4, 6], return 4. For [5], return 5.",
+      "For an empty list, raise ValueError with any appropriate message."
+    ]
+  },
+  "task_counter": {
+    "source": "sample_code/task_counter.py",
+    "tests": "tests/test_task_counter.py",
+    "rules": [
+      "Input is a list of dictionaries, each containing a boolean done field.",
+      "Return the number of tasks with done equal to True.",
+      "Return zero for an empty list.",
+      "A false done value must not be counted."
+    ]
+  }
+}
